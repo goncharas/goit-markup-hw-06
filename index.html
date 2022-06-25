@@ -691,43 +691,92 @@
                 </p>
                 <form class="modal-form">
                     <div class="modal-field">
-                    <label class="modal-lable" for="user-name">Имя</label>
-                    <input
-                        type="text"
-                        name="user-name"
-                        class="modal-input"
-                        required
-                        id="user-name"
-                    />
+                        <label class="modal-lable" for="user-name">Имя</label>
+                        <div class="input-wrap">
+                            <input
+                                type="text"
+                                name="user-name"
+                                class="modal-input"
+                                required
+                                id="user-name"
+                            />
+                            <svg class="input-icon" width="18" height="18">
+                                <use
+                                    href="./img/icons.svg#icon-person-black"
+                                ></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="modal-field">
-                    <label class="modal-lable" for="user-tel">Телефон</label>
-                    <input
-                        type="tel"
-                        name="user-tel"
-                        class="modal-input"
-                        title="+380 (96) 111 11 11"
-                        required
-                        id="user-tel"
-                    />
+                        <label class="modal-lable" for="user-tel"
+                            >Телефон</label
+                        >
+                        <div class="input-wrap">
+                            <input
+                                type="tel"
+                                name="user-tel"
+                                class="modal-input"
+                                title="+380 (96) 111 11 11"
+                                required
+                                id="user-tel"
+                            />
+                            <svg class="input-icon" width="18" height="18">
+                                <use
+                                    href="./img/icons.svg#icon-phone-black"
+                                ></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="modal-field">
-                    <label class="modal-lable" for="user-mail">Почта</label>
-                    <input
-                        type="email"
-                        name="user-mail"
-                        class="modal-input"
-                        required
-                        id="user-mail"
-                    />
+                        <label class="modal-lable" for="user-mail">Почта</label>
+                        <div class="input-wrap">
+                            <input
+                                type="email"
+                                name="user-mail"
+                                class="modal-input"
+                                required
+                                id="user-mail"
+                            />
+                            <svg class="input-icon" width="18" height="18">
+                                <use
+                                    href="./img/icons.svg#icon-email-black"
+                                ></use>
+                            </svg>
+                        </div>
                     </div>
-                     <div class="modal-field">
+                    <div class="modal-coments">
                         <label class="modal-lable" for="user-coments"
-                                >Комментарий</label>
-                        <textarea class="modal-area"
-                        name="modal-text"
-                        id="modal-text"
-                        placeholder="Введите текст"></textarea>
+                            >Комментарий</label
+                        >
+                        <textarea
+                            class="modal-area"
+                            name="modal-text"
+                            id="modal-text"
+                            placeholder="Введите текст"
+                        ></textarea>
+                        <div class="check-field">
+                            <input
+                                type="checkbox"
+                                name="privacy"
+                                id="privacy"
+                                class="input-check visually-hidden"
+                            />
+                            <label for="privacy" class="check-text">
+                                <span class="check-span">
+                                    <svg
+                                        class="check-icon"
+                                        width="11"
+                                        height="8"
+                                    >
+                                        <use
+                                            href="./img/icons.svg#icon-vector"
+                                        ></use></svg></span
+                                >Соглашаюсь с рассылкой и принимаю &nbsp
+                                <a href="" class="check-link"
+                                    >Условия договора</a
+                                >
+                            </label>
+                        </div>
                     </div>
                     <button type="submit" class="button modal-btn">
                         Отправить
