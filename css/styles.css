@@ -542,6 +542,65 @@ body {
     fill: currentColor;
 }
 
+.footer-mail-input{
+    margin-left: 93px;
+}
+
+.footer-mail-tilel{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+.footer-mail-form{
+    display: flex;
+    align-items: center;
+}
+
+.mail-input{
+    width: 358px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    padding: 16px 15px;
+    color: var(--secondary-text-color);
+    transition: var(--o-transform-border);
+    outline: transparent;
+}
+
+.mail-input:hover,
+.mail-input:focus{
+     border: 1px solid var(--accent-color);
+     cursor: pointer;
+}
+
+.mail-input::placeholder{
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-send{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
 /*----------------- Portfolio-----------------------*/
 /*-------------------- button-----------------------*/
 .filter-button {
