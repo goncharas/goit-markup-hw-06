@@ -857,19 +857,23 @@ body {
     align-items: center;
 }
 
-.check-text:hover{
+.check-text:hover,
+.check-text:focus{
     cursor: pointer;
 }
 
 .check-text .check-span{
     width: 16px;
     height: 16px;
-    border: 2px solid #212121;
+    border: 3px solid #212121;
     border-radius: 3px;
     margin-right: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--o-transform-border),
+    var(--o-transform-fill),
+    var(--o-trasform-background);
 }
 
 .check-icon{
@@ -882,7 +886,14 @@ body {
 }
 
 .input-check:checked + .check-text .check-icon{
-   fill: #ffffff;   
+   fill: #ffffff;
+}
+
+.input-check:focus + .check-text .check-span,
+.input-check:hover + .check-text .check-span{
+    cursor: pointer;
+    border: 3px solid var(--accent-color);
+    border-radius: 3px;
 }
 /*.check-text::before{
     content: "";
