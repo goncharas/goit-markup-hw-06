@@ -193,6 +193,7 @@ body {
     padding: 10px 32px;
     min-width: 200px;
     height: 50px;
+    border-width: 0px;
 
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
@@ -846,7 +847,6 @@ body {
     margin-bottom: 30px;
 }
 
-
 .check-text{
     font-size: 14px;
     line-height: 1.71;
@@ -879,12 +879,10 @@ body {
 .input-check:checked + .check-text .check-span{
     background-color: var(--accent-color);
     border: none;
-
 }
 
 .input-check:checked + .check-text .check-icon{
-   fill: #ffffff;
-    
+   fill: #ffffff;   
 }
 /*.check-text::before{
     content: "";
